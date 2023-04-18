@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+body{
+    background-image: url(/img/tem2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+header p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgb(237, 231, 231);
+    
+}
+header{
+    width: 20% ;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.319);
+    border-bottom: 1px solid white;
+    border-radius: 2px;
+    padding: 1vw;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.055);
+    font-size: 1rem;
+}
+
+input::placeholder{
+    color: white;
+}
+
+div.numTemporizador {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1vh;
+}
+
+div.cont-temporizador{
+    background-color: rgba(0, 0, 0, 0.318);
+    padding: 2vh 3vh;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+div p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1vh 1.5vw;
+    
+}
+
+button, input#iniciar{
+    width: 16vh;
+    padding: 1vh;
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.926);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: ghostwhite;
+}
+
+button:hover, input#iniciar:hover {
+    background-color: red;
+}
+
+button.activo{
+    pointer-events: none;
+    background-color: red;
+    scale: 1.1;
+}
+
+.venAqui {
+    position: absolute;
+}
+.mostrar{
+    display: block;
+}
+.nomostrar{
+    display: none!important;
+}

@@ -1,0 +1,13 @@
+body {
+    height: 100vh!important;
+}
+
+.texto-recortado {
+    width: 190px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis!important;
+}
+
+.scrolly {
+    overflow-y: scroll;
+}

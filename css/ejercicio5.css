@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/img/futuristic-city-landscape-future-theme-concept-background-vector.jpg);
+    background-size: cover;
+    /*background: rgb(90,169,173);
+    background: linear-gradient(0deg, rgba(90,169,173,1) 0%, rgba(94,157,165,1) 4%, rgba(94,159,166,1) 9%, rgba(104,129,145,1) 22%, rgba(120,81,112,1) 61%, rgba(121,78,110,1) 76%, rgba(130,51,91,1) 96%, rgba(140,21,70,1) 100%);*/
+}
+
+header{
+    height: 20%;
+    text-align: center;
+    padding-top: 7vh;
+    font-size: 1.5rem;
+    color: rgb(247, 243, 243);
+    text-shadow: 3px 3px 1px rgb(71, 70, 70);
+}
+
+.caja {
+    user-select: none;
+    height: 80%;
+    width: 100%;
+}
+
+p{
+    display: inline-block;
+}
+
+p.dospuntos {
+    margin: 0 6px;
+}
+
+p.mlseg{
+    color: rgb(149, 41, 84);
+}
+
+div.contenedor {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.numeros {
+    background-color: rgba(183, 183, 183, 0.711);
+    padding: 3vh 3vw;
+    margin-bottom: 5vh;
+    border-radius: 7px;
+    font-size: 4rem;
+    box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.6);
+}
+
+button {
+    padding: 1vh 2vw;
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.6);
+}
+
+.botonera button.activo,
+.botonera button.pararActivo{
+    pointer-events: none;
+
+}
+
+button:hover,
+.seleccionado{
+    background-color: rgb(184, 50, 121);
+    color: whitesmoke;
+    scale: 1.02;
+}
+
+       
+

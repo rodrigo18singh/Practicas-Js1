@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-2</title>
+    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="/css/ejercicio2.css">
+</head>
+<body>
+    <header>
+        <h1>Guarda tu Perfil</h1>
+    </header>
+    <main>
+        <div>
+            <h3>Formulario de Datos</h3>
+            <form id="formulario">
+                <input type="text" placeholder="Nombre" id="nombre" required >
+                <input type="number" placeholder="Edad" id="edad" required >
+                <input type="number" placeholder="Número DNI" id="dni" required>
+                <div >
+                    
+                    <label for="sexH">Hombre</label >
+                    <input type="radio" name="sexo" value="Hombre" class="sexo" id="sexH">
+                    <label for="sexM">Mujer</label>
+                    <input type="radio" name="sexo" value="Mujer" class="sexo" id="sexM" >
+                </div>
+                <input type="number" name="peso" placeholder="Peso en Kg" id="peso">
+                <input type="number" name="altura" placeholder="Altura en cm" id="altura">
+                <input type="number"  name="anioDeNacimiento" maxlength="4" minlength="4" placeholder="Año de nacimiento" id="anioDeNacimiento">
+                <input class="button" type="submit" value="Enviar" name="botonEnviar" id="btnEnviar">
+                <button type="button" id="mayorEdad">Mayor De Edad</button>
+                <button type="button" id="generacion">Mostrar Generación</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
