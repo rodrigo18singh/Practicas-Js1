@@ -527,8 +527,9 @@ contener los botones, iniciar, pausar y reset.*/
     const minInput = document.querySelector(".minIngresado");
     const segInput = document.querySelector(".segIngresado");
 
+    let hr, min, seg = "0" +0;
     
-    
+        
     
 
     function cambiarNumeros(){
